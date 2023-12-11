@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: 'lib/main.ts',
-      formats: ['es'],
+      name: "game-state",
+      entry: "lib/main.ts",
     },
   },
 })
