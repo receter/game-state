@@ -3,6 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "exports": {
+    "." : {
+      "types": "./dist/game-state.d.ts",
+      "import": "./dist/game-state.js",
+      "default": "./dist/game-state.umd.cjs"
+    }
+  },
+  "files" : [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
